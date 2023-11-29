@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Genre Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pages.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+</head>
+<body>
+    <!--header 시작-->
+    <header class="mh">
+        <a href="/main" class="logo">
+            <img src="../img/test.png" id="icon">
+        </a>
+        <a href="#" id="loggedIn">Logout</a>
+    </header>
+    <!--header 끝-->
+    <!--nav 시작-->
+    <nav id="main-menu" class="mm">
+        <div class="centernav">
+            <ul id="menu-menu" class="menu">
+                <li id="menu-item-1" class="menu-item">
+                    <a href="/main">
+                        <span>요일별 애니</span>
+                    </a>
+                </li>
+                <li id="menu-item-2" class="menu-item">
+                    <a href="#">
+                        <span>분기별 애니</span>
+                    </a>
+                </li>
+                <li id="menu-item-3" class="menu-item">
+                    <a href="/genre">
+                        <span>장르</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="random">
+                <img src="../img/test.png" id="random-icon">
+            </a>
+        </div>
+    </nav>
+    <!--nav 끝-->
+    <!--본문 시작-->
+    <div id="content">
+        <div class="wrapper">
+            <!--장르 칸 시작-->
+            <div class="postbody">
+                <div class="bixbox">
+                    <div class="releases">
+                        <h1>
+                            <span id="genre-type"></span>
+                        </h1>
+                    </div>
+                    <div class="listupd"></div>
+                </div>
+            </div>
+            <!--장르 칸 끝-->
+            <!--사이드 바 시작-->
+            <div id="sidebar">
+                <!--장르 바 시작-->
+                <div class="section">
+                    <div class="releases">
+                        <h3>장르</h3>
+                        <a class="vl" href="/genre">더보기</a>
+                    </div>
+                    <ul class="genre">
+                        <li>
+                            <a href="/genre/page?type=액션">액션</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=모험">모험</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=로맨스">로맨스</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=SF">SF</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=심리">심리</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=드라마">드라마</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=미스터리">미스터리</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=판타지">판타지</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=음악">음악</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=코미디">코미디</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=초자연">초자연</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=일상">일상</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=공포">공포</a>
+                        </li>
+                        <li>
+                            <a href="/genre/page?type=스포츠">스포츠</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--장르 바 끝-->
+                <!--추천 애니 시작-->
+                <div class="section">
+                    <div class="releases">
+                        <h1>
+                            <span>랜덤 추천 ~ !</span>
+                        </h1>
+                    </div>
+                    <div class="reco-box">
+                        <ul id="reco-list"></ul>
+                    </div>
+                </div>
+                <!--추천 애니 끝-->
+            </div>
+            <!--사이드 바 끝-->
+        </div>
+    </div>
+    <!--본문 끝-->
+    <!--footer 시작-->
+    <footer class="site-footer">
+        <div class="footercopyright">
+            <div class="copyright">
+                <div class="footer-logo">
+                    <img src="../img/test.png">
+                </div>
+                <div class="txt">
+                    <span>Copyright @ 2024 PoBiRi's Termporject</span>
+                    <p>
+                        Here is nothing. Go back to upsite.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer 끝-->
+</body>
+<script src="../js/base.js"></script>
+<script src="../js/genre.js"></script>
+<script src="../js/cookieIO.js"></script>
+</html>

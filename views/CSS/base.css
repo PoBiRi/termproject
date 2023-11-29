@@ -1,0 +1,128 @@
+body {
+    background-color: #c4dfff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    color: #222;
+    margin: 0 auto;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #0c70de;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+/*main header*/
+.mh {
+    width: auto;
+    height: 60px;
+    overflow: hidden;
+}
+.mh .logo {
+    height: 60px;
+    float: left;
+}
+.mh #icon {
+    height: 60px;
+}
+.mh #loggedIn{
+    height: 60px;
+    line-height: 90px;
+    float: right;
+    color: black;
+}
+.mh #loggedIn:hover {
+    text-decoration: underline;
+}
+
+/*main menu*/
+.mm {
+    width: auto;
+    height: 42px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    background-color: #547fb2;
+}
+.centernav {
+    height: 42px;
+    padding: 0 20px;
+}
+.menu {
+    display: block;
+    list-style: none;
+    float: left;
+}
+.menu-item {
+    line-height: 42px;
+    display: block;
+    height: 42px;
+    padding: 0 10px;
+    float: left;
+}
+.menu-item a{
+    color: white;
+}
+.menu-item:hover {
+    background-color: #4174b3;
+}
+.random {
+    display: block;
+    height: 42px;
+    float: right;
+}
+.random #random-icon {
+    height: 42px;
+}
+
+/*footer*/
+.site-footer {
+    height: 136px;
+    overflow: hidden;
+    background-color: #547fb2;
+}
+.footercopyright {
+    height: 136px;
+    padding: 0 20px;
+}
+.copyright {
+    height: 96px;
+    padding-top: 40px;
+}
+.footer-logo {
+    height: 50px;
+    float: left;
+}
+.footer-logo img {
+    height: 50px;
+}
+.txt {
+    float: left;
+    font-size: 13px;
+}
+.txt p {
+    font-size: 10.66px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .menu-item {
+        line-height: 42px;
+        display: block;
+        height: 42px;
+        padding: 0 10px;
+        float: left;
+    }
+    .random {
+        display: block;
+        width: 10%;
+        height: 42px;
+        float: right;
+    }
+}

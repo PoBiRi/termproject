@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper {
+    margin: 0 20px;
+    position: relative;
+}
+
+.postbody {
+    float: left;
+    width: 70%;
+}
+.postbody p {
+    margin: 10px 0;
+}
+
+.bixbox {
+    background: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-bottom: 18px;
+    box-shadow: 1px 3px 8px rgba(49, 49, 49, .1);
+    overflow: hidden;
+}
+/*인포 페이지 .bigcontent*/
+.bigcontent {
+    position: relative;
+    padding: 15px 20px 25px;
+    padding-left: 195px;
+    z-index: 1;
+    min-height: 370px;
+}
+
+.bigcontent .thumbox {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    width: 165px;
+}
+.img_full {
+    max-width: 100%;
+    height: 100%;
+}
+.bigcontent .info-box h1 {
+    margin: 0 0 10px;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: normal;
+}
+.bigcontent .info-box {
+    font-size: 13.5px;
+    line-height: normal;
+}
+.bigcontent .info-box .mindesc {
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+.bigcontent .info-box .spe {
+    margin-bottom: 10px;
+    overflow: hidden;
+    column-count: 2;
+}
+.bigcontent .info-box .spe span {
+    margin-bottom: 3px;
+    padding-right: 7px;
+    padding-left: 14px;
+    position: relative;
+    line-height: 19px;
+    display: block;
+}
+.bigcontent .info-box .spe span:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: #0c70de;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.bigcontent .info-box .spe span b {
+    font-weight: 500;
+}
+.bigcontent .info-box .genxed {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.bigcontent .info-box .genxed a {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #0c70de;
+    border: 0.5px solid #0c70de;
+    border-radius: 3px;
+}
+.bixbox.synp .entry-content {
+    margin: 15px;
+    line-height: 21px;
+}
+/*장르 선택 페이지*/
+.genre-page {
+    padding: 15px;
+    line-height: 21px;
+    color: #000;
+}
+.taxindex {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.taxindex li {
+    width: 25%;
+}
+.taxindex li a {
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 0.25rem;
+    background: #f1f1f1;
+    color: #333;
+}
+/*장르 페이지*/
+.listupd {
+    padding: 10px;
+    overflow: hidden;
+}
+.bs {
+    float: left;
+    width: 20%;
+}
+.bs .bsx {
+    overflow: hidden;
+    margin: 7px;
+    margin-bottom: 15px;
+    transition: all .2s;
+    position: relative;
+}
+.bs .bsx .limit {
+    padding: 142% 0 0;
+    position: relative;
+    overflow: hidden;
+    background: #333;
+    border-radius: 4%;
+}
+.bs .bsx .limit img {
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    top: 0;
+    position: absolute;
+}
+.bs .bsx .tt {
+    height: 33px;
+    overflow: hidden;
+    font-size: .95em;
+    margin: 8px 0;
+    margin-bottom: 0;
+    line-height: 1.25em;
+    text-align: center;
+}
+/*공통*/
+#sidebar {
+    width: 30%;
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+#sidebar .section {
+    margin-left: 15px;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 18px;
+    box-shadow: 1px 3px 8px rgba(49, 49, 49, .1);
+}
+#sidebar .section h3, .releases h1, .releases h3, .releases h2 {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+}
+#sidebar .section ul.genre {
+    overflow: hidden;
+    list-style: none;
+    position: relative;
+    padding: 5px 0 15px;
+    font-size: inherit;
+}
+#sidebar .section ul.genre:after, #sidebar .section ul.genre:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 33.33%;
+    background: #ececec;
+}
+#sidebar .section ul.genre:after {
+    left: 66.66%;
+}
+#sidebar .section ul.genre li a {
+    font-size: 13px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+/*삭제시 세로 정렬*/
+#sidebar .section ul.genre li {
+    float: left;
+    width: 33.33%;
+    padding: 0;
+    border-bottom: 1px solid #eae8f1;;
+}
+.releases {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #ececec;
+    padding: 8px 15px;
+}
+.releases .vl {
+    font-size: .6em;
+    text-transform: uppercase;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 6px;
+    border-radius: 2px;
+    background: #0c70de;
+    display: inline-block;
+    margin-top: 1px;
+    margin-right: -3px;
+}
+.releases .vl:hover {
+    color: black;
+}
+.reco-box {
+    overflow: hidden;
+}
+.reco-box ul {
+    overflow: hidden;
+}
+.reco-box ul li {
+    padding: 12px 15px;
+    text-overflow: unset;
+    white-space: unset;
+    overflow: hidden;
+    border-bottom: 1px solid #ececec;
+    position: relative;
+}
+.reco-box ul li .reco-img {
+    float: left;
+    overflow: hidden;
+    width: 45px;
+    margin-right: 10px;
+}
+.reco-box ul li .reco-img img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    float: none;
+    border-radius: 5%;
+}
+.reco-box ul li .reco-info {
+    overflow: hidden;
+    text-overflow: unset;
+    white-space: unset;
+}
+#sidebar .reco-box ul li .reco-info h4 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0 3px;
+    line-height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.reco-box ul li .reco-info span {
+    overflow: hidden;
+    font-size: .88em;
+    color: #888;
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.reco-box ul li .reco-info span b {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 860px) {
+    #sidebar .section {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    #sidebar, .postbody{
+        float: none;
+        width: auto;
+    }
+    .bixbox {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #sidebar .section ul.genre li {
+        float: left;
+        width: 50%;
+    }
+    #sidebar .section ul.genre:after, #sidebar .section ul.genre:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        background: #ececec;
+    }
+}
+@media screen and (max-width: 695px) {
+    .bigcontent {
+        padding: 10px;
+        padding-bottom: 90px;
+    }
+    .bigcontent .thumbox {
+        margin: 0 auto;
+        height: auto;
+        position: unset;
+        top: auto;
+        left: auto;
+        float: none;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .bs {
+        float: left;
+        width: 33.333333%;
+    }
+}
