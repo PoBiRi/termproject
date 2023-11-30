@@ -23,7 +23,14 @@ app.get('/', (req, res) =>{
 
 app.post('/login', (req, res) => {
     const {userID, password} = req.body;
-    db.query('select * from user where userID = ? AND userPassword = ?',[userID, password], (error, result) => {
+
+    if (useID = 'testuser' && password = '1234'){
+        res.json({ success: true, message: 'Success'})
+    } else {
+            res.json({ success: false, message: 'Invalid username or password'})
+    }
+    
+    /*db.query('select * from user where userID = ? AND userPassword = ?',[userID, password], (error, result) => {
         if (error){
             throw err;
         }
@@ -32,7 +39,7 @@ app.post('/login', (req, res) => {
         } else {
             res.json({ success: false, message: 'Invalid username or password'})
         }
-    });
+    });*/
 })
 
 app.get('/main', (req, res) =>{
