@@ -24,9 +24,7 @@ app.get('/', (req, res) =>{
 app.post('/login', (req, res) => {
     const {userID, password} = req.body;
     db.query('select * from user where userID = ? AND userPassword = ?',[userID, password], (error, result) => {
-        if (error){
-            throw err;
-        }
+        if (error) return console.log(error, 'check');
         if (result.length > 0){
             res.json({ success: true, message: 'Success'})
         } else {
