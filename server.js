@@ -24,7 +24,7 @@ app.get('/', (req, res) =>{
 app.post('/login', (req, res) => {
     const {userID, password} = req.body;
 
-    if (useID = 'testuser' && password = '1234'){
+    if (userID = 'testuser' && password = '1234'){
         res.json({ success: true, message: 'Success'});
     } else {
         res.json({ success: false, message: 'Invalid username or password'});
