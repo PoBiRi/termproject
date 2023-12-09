@@ -110,7 +110,7 @@
     margin: 15px;
     line-height: 21px;
 }
-/*장르 선택 페이지*/
+/*장르 메뉴 페이지*/
 .genre-page {
     padding: 15px;
     line-height: 21px;
@@ -310,19 +310,6 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: 860px) {
-    #sidebar .section {
-        margin: 0;
-        margin-bottom: 5px;
-    }
-    #sidebar, .postbody{
-        float: none;
-        width: auto;
-    }
-    .bixbox {
-        margin-bottom: 5px;
-    }
-}
 @media screen and (max-width: 900px) {
     #sidebar .section ul.genre li {
         float: left;
@@ -339,7 +326,20 @@
         background: #ececec;
     }
 }
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 800px) {
+    #sidebar .section {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    #sidebar, .postbody{
+        float: none;
+        width: auto;
+    }
+    .bixbox {
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width: 700px) {
     .bigcontent {
         padding: 10px;
         padding-bottom: 90px;
@@ -348,15 +348,11 @@
         margin: 0 auto;
         height: auto;
         position: unset;
-        top: auto;
-        left: auto;
-        float: none;
         margin-bottom: 15px;
     }
 }
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
     .bs {
-        float: left;
-        width: 33.333333%;
+        width: 33%;
     }
 }
